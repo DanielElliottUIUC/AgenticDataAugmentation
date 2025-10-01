@@ -25,3 +25,8 @@ to attempt to mitigate focusing only on one feature.
 
 Iteration:
 In the iteration step, the agent receives the current features and their performance, and repeats everything after taking in the dataset again.
+
+Initial goals:
+
+*build out protoype agent to completion of data generation
+*research model pro and cons and usage behavior, as well as considerations for evaluation
