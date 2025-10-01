@@ -1,0 +1,27 @@
+Phases:
+
+
+Agent:
+The agent needs to first be able to take in a dataset, likely intially only taking in feature names and general data description
+From there, it needs to research to make a first-order approximation of what features are likely useful, what features are likely not, and what generated features would be good
+Currently, the aim is to have it generate a ranked list of {Feature, {reason for ranking, reasons that would move down, reasons that would move up}}, with the latter two largely based on performance of other features
+To do this, the model needs the ability to research, and generate formatted (likely JSON) outputs
+
+
+
+Data Generation:
+The agent then needs to generate a csv containing only these features, and do the necesary computations to obtain the novel features
+Additonally, we want preprocessing to happen here. To accomplish this, the agent needs to be able to perform reliable computations and generate CSVs.
+The tools that will likely be used are a code editor, a list of commmon pre-processors with motivations and call instructions, and some form of math evaluator - which may be incorporated into code
+
+In later stages of the project, we want the agent to verify that the generation is reasonable by creating rules that the intial data follows and confirming that the new data matches, but for the intiial prototype this will simply be confirming data match
+
+Evaluation:
+In the evaluation stage, we want to do two things, check model performance and check feature performance. Model performance will be obtained by evaluating a host of likely model candidates, for accuracy, time, and compute cost, with some adjustable
+weighting scheme, and ideally a penalty for high feature count. We aim to have model candiates be adjustable, but may avoid that in the prototype. This is where we aim to finish iterating, upon observing consistently minimal performance increases after runs.
+
+Feature performance will be what is largely used for iteration, through some combination of SHAP, covariance, and correlation calculations. We eventually aim to also reward performance for droppouts of increasingly larger portions of features,
+to attempt to mitigate focusing only on one feature.
+
+Iteration:
+In the iteration step, the agent receives the current features and their performance, and repeats everything after taking in the dataset again.
