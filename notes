@@ -30,3 +30,14 @@ Initial goals:
 
 *build out protoype agent to completion of data generation
 *research model pro and cons and usage behavior, as well as considerations for evaluation
+
+Todo 10/19
+Fix model selector:
+  more default choices
+  choices based on data size
+  custom models
+Fix agentic stuff
+Fix pre-processing:
+  make cleaner
+  ensure regularization
+Fix generation - standardize
