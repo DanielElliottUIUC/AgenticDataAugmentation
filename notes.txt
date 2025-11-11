@@ -1,0 +1,29 @@
+Meta Learning - potentially a solution, very likely a useful baseline for performance - https://arxiv.org/abs/1811.01743, https://arxiv.org/pdf/1811.01743
+Meta learning for improving xg boost performance - likely good to integrate into pipeline depending on time penality vs performance boost - https://meta-learn.github.io/2019/papers/metalearn2019-sommer.pdf
+
+XGBoost for timeseries data:
+https://cienciadedatos.net/documentos/py56-forecasting-time-series-with-xgboost - summary
+https://machinelearningmastery.com/xgboost-for-time-series-forecasting - esp note the walk foward validation, but predicting one step forward validation - not espcially useful
+https://www.reddit.com/r/MachineLearning/comments/1aoo7gc/d_how_does_xgboost_work_with_time_series/?utm_source=chatgpt.com
+
+
+XGBoost for in-line prediction:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9049587 - wavelet decomp for noise remopval, CNNs for local feature generation - not interetable 
+
+XGBoost for future prediction:
+this may not be completely possible - reasonable that we could, given dataset predict risk factor, but likely outside of domain of current issue
+https://arxiv.org/pdf/2305.06109******** 
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9460561 - idea of risk score
+https://arxiv.org/abs/2007.08491 - similar, though almost entirely unexplainable
+
+Automated signal generation:
+https://arxiv.org/pdf/2012.10034 - more wavelet, automated features
+https://physionet.org/files/challenge-2020/1.0.2/papers/CinC2020-185.pdf
+https://www.nature.com/articles/s41598-022-18257-x - spectogram - > cnn -> xgboost - works, but...
+https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/s12938-023-01075-1?utm_source=chatgpt.com
+https://www.researchgate.net/publication/392997725_Exploring_EEG_Feature_Extraction_and_Explainable_AI_for_Accurate_Depth_of_Anesthesia_Prediction - need to write authors for
+
+Reasons this is actually a problem
+https://arxiv.org/html/2402.15513v1
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11285255
+https://arxiv.org/abs/2212.08744
