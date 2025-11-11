@@ -23,6 +23,13 @@ https://www.nature.com/articles/s41598-022-18257-x - spectogram - > cnn -> xgboo
 https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/s12938-023-01075-1?utm_source=chatgpt.com
 https://www.researchgate.net/publication/392997725_Exploring_EEG_Feature_Extraction_and_Explainable_AI_for_Accurate_Depth_of_Anesthesia_Prediction - need to write authors for
 
+LLM Usage:
+
+https://arxiv.org/pdf/2404.09491 - llms for tabular learning - upon bringing data into shape
+https://proceedings.mlr.press/v225/yu23b/yu23b.pdf?utm_source=chatgpt.com - using RAG, a lot of custom work  recquired - might be worthwhile as proof of concept?
+https://arxiv.org/pdf/2408.07773 - this is very interesting, turning epochs into embeddings that are turn into textual embeddings, but not quite ending with xgboost- clearly far more expensive amortized performance
+https://spj.science.org/doi/10.34133/hds.0221?utm_source=chatgpt.com#sec-2 - similar to above, embeddings idea has promise - but less explaniable, unless somehow consitenyl repeatable
+
 Reasons this is actually a problem
 https://arxiv.org/html/2402.15513v1
 https://pmc.ncbi.nlm.nih.gov/articles/PMC11285255
